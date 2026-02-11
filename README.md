@@ -9,5 +9,5 @@ Our memory is one of our most precious abilities. Memory guides adaptive decisio
 
 The goal of our resarch program is to advance understanding of memory, with the ultimate goal of translating our work into treatments for disorders of learning and memory, such as post-traumatic stress disorder (PTSD) and anxiety-related disorders.
 
-Our research is currently funded by the National Institue of Mental Health R15 MH127534-01.
+Our research is currently funded by the National Institue of Mental Health R15 MH127534-01. Check out our website for updates about our recent publications. 
 
