@@ -1,4 +1,5 @@
-# VassarMemoryNeuroscience
+# Vassar College Memory Neuroscience Lab
+## Led by Dr. Hadley Bergstrom
 <img src="https://github.com/user-attachments/assets/0f8d7aa2-1b3e-4796-b01e-2dd251696310" width="200">
 
 ## Welcome
