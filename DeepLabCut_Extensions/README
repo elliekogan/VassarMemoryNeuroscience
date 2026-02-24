@@ -1,5 +1,33 @@
-We have developed custom scripts to quantify specific mice behaviors in our lab. Instructions to run them are as follows:
-1. Download DeepLabCut. Instructions can be found here: [text](https://deeplabcut.github.io/DeepLabCut/docs/installation.html)
-2. Download Python. 
-3. Run DeepLabCut. Instructions can be found here: [text](https://deeplabcut.github.io/DeepLabCut/docs/standardDeepLabCut_UserGuide.html)
-4. Use our scripts to analyze behavior. Scripts in the "By_Bouts" folder measure bouts of behavior throughout the videos. Scripts in the "By_Time folder measure amount of time that the behavior is present throughout the videos. 
+# DeepLabCut Extensions
+
+This module contains lab-developed analysis tools for quantifying behavioral features from DeepLabCut pose-estimation outputs.
+
+## Contents
+
+- `Analysis/`: notebooks and scripts for bout-level and time-binned behavioral summaries.
+- `Visualizations/`: plotting notebooks for movement and position trajectories.
+
+## Prerequisites
+
+1. Python 3.10+ (recommended)
+2. DeepLabCut installed and validated in your environment
+3. DeepLabCut CSV outputs exported for each recorded video
+
+DeepLabCut documentation:
+- Installation: <https://deeplabcut.github.io/DeepLabCut/docs/installation.html>
+- User guide: <https://deeplabcut.github.io/DeepLabCut/docs/standardDeepLabCut_UserGuide.html>
+
+## Usage Guidelines
+
+1. Define configurable input/output paths at the top of each notebook or script.
+2. Point inputs to a directory containing DeepLabCut CSV files.
+3. Run the relevant analysis workflow:
+   - Bout-based summaries for event episodes.
+   - Time-based summaries for interval-level occupancy and duration metrics.
+4. Export results to `.csv` for quality control and statistical analysis.
+
+## Reproducibility Notes
+
+- Keep path configuration relative where possible.
+- Avoid storing execution outputs with machine-specific absolute paths.
+- Save cleaned notebooks and scripts with explicit parameter blocks.

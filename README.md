@@ -1,13 +1,40 @@
 # Vassar College Memory Neuroscience Lab
-## Led by Dr. Hadley Bergstrom
-<img src="https://github.com/user-attachments/assets/0f8d7aa2-1b3e-4796-b01e-2dd251696310" width="200">
 
-## Welcome
-What is Memory Neuroscience at Vassar College?
+Computational and behavioral analysis resources for memory neuroscience research at Vassar College.
 
-Our memory is one of our most precious abilities. Memory guides adaptive decision-making, triggers complex emotion, and shapes our conscious experience. A principle endeavor in the field of neuroscience is understanding the nature of memory; how it is constructed, stored, modified, and retrieved in the brain. In the Memory Neuroscience lab at Vassar College, we study how memory is organized and retrieved in the brain at the level of molecules, structure, and function. A major emphasis in our lab is the study of aversive (fear) memory and the neurobiological underpinnings of fear memory generalization. Generalization describes the transfer of conditioned responding to stimuli that perceptually resemble, but do not exactly match, the original conditioned stimulus. Generalization is ubiquitous across species, however the neuronal mechanisms remain poorly understood. The study of generalization has high translational relevance considering that both anxiety-related disorders and post-traumatic stress disorder (PTSD) are thought to be, at least in part, related to the overgeneralization of memory. To test questions related to fear memory generalization, we apply neuroscience tools for visualizing and manipulating memory processes in the brain.
+## Research Focus
 
-The goal of our resarch program is to advance understanding of memory, with the ultimate goal of translating our work into treatments for disorders of learning and memory, such as post-traumatic stress disorder (PTSD) and anxiety-related disorders.
+The Memory Neuroscience Lab investigates how memory is encoded, stored, and retrieved across molecular, systems, and behavioral levels. A central emphasis is fear-memory generalization and the neural mechanisms that support adaptive versus maladaptive generalization, with translational relevance to anxiety-related disorders and post-traumatic stress disorder (PTSD).
 
-Our research is currently funded by the National Institue of Mental Health R15 MH127534-01. Check out our website for updates about our recent publications. 
+## Repository Scope
 
+This repository provides lab-maintained analysis workflows used for behavioral video data processing and downstream quantification.
+
+- `DeepLabCut_Extensions/`: analysis notebooks and scripts extending DeepLabCut outputs.
+- `VAME/`: resources for integrating and extending VAME-based workflows.
+
+## Getting Started
+
+1. Clone this repository.
+2. Create and activate a dedicated Python environment.
+3. Install required dependencies for the workflow(s) you plan to run.
+4. Configure project paths using your local data directory structure.
+5. Run analyses from the relevant module README.
+
+## Data and Path Configuration
+
+To ensure reproducibility across systems:
+
+- Do not hard-code machine-specific paths.
+- Use configurable variables (for example, `INPUT_DIR`, `OUTPUT_DIR`, and `PROJECT_ROOT`).
+- Keep raw data outside version control and document expected file formats.
+
+## Reproducibility Standards
+
+- Record software versions (Python, package versions, model versions).
+- Keep analysis parameters explicit and versioned.
+- Export derived results to structured tables (`.csv`) for downstream statistics.
+
+## Funding
+
+The lab's research program is supported by the National Institute of Mental Health (NIMH), award `R15 MH127534-01`.

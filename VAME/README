@@ -1,3 +1,20 @@
-We have implemented VAME in our lab and added developed a variety of scripts to enhance the capabilities of VAME. To use them, follow these instructions. These asssume you already have DeepLabCut data.
+# VAME Workflows
 
-This section will be completed with the completion of Ellie's thesis.
+This module will host lab-standard workflows for using VAME with DeepLabCut-derived pose data.
+
+## Current Status
+
+Documentation and analysis assets are in active development. This section is maintained as a stable entry point for future reproducible VAME workflows used in the lab.
+
+## Planned Documentation Scope
+
+- Environment setup and dependency versions
+- Input data schema (expected DLC/VAME file structures)
+- Standardized preprocessing and model configuration
+- Post-model analysis templates and export formats
+
+## Interim Guidance
+
+- Use configurable project paths (no absolute local-machine paths).
+- Track package versions and model parameters alongside outputs.
+- Store derived outputs in structured tabular formats for downstream statistical analysis.
