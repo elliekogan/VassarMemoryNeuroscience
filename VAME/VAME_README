@@ -1,0 +1,6 @@
+The `VAME` directory contains the scripts used to run the full VAME workflow for this project.
+
+- `pipeline.py`: main end-to-end pipeline (can be run stepwise or as a full sequence)
+- `pick_n_vame.py`: utility for selecting `n_clusters` after project setup and before model training
+
+Configuration values are intentionally explicit so the workflow can be adapted to new datasets and local environments.

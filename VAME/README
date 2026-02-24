@@ -1,20 +1,47 @@
 # VAME Workflows
 
-This module will host lab-standard workflows for using VAME with DeepLabCut-derived pose data.
+This directory contains scripts used to run VAME-based behavioral motif analysis on pose data derived from DeepLabCut.
 
-## Current Status
+## Included Files
 
-Documentation and analysis assets are in active development. This section is maintained as a stable entry point for future reproducible VAME workflows used in the lab.
+- `pipeline.py`: end-to-end VAME workflow script (project setup, preprocessing, training, segmentation, and optional analyses).
+- `pick_n_vame.py`: utility to select `n_clusters` before model training.
+- `VAME_README`: short internal notes for this module.
 
-## Planned Documentation Scope
+## Prerequisites
 
-- Environment setup and dependency versions
-- Input data schema (expected DLC/VAME file structures)
-- Standardized preprocessing and model configuration
-- Post-model analysis templates and export formats
+1. Python environment with VAME and scientific dependencies installed.
+2. DeepLabCut pose exports prepared for each video.
+3. Video files available for project initialization and optional motif/community video generation.
 
-## Interim Guidance
+## Expected Workflow
 
-- Use configurable project paths (no absolute local-machine paths).
-- Track package versions and model parameters alongside outputs.
-- Store derived outputs in structured tabular formats for downstream statistical analysis.
+1. Configure `pipeline.py`:
+   - Set `video_directory` to your video root.
+   - Set `working_directory` to the parent directory where the VAME project will be created.
+   - Set `project` to your project name.
+   - Set `config` to your `config.yaml` path after project initialization.
+2. Run VAME preprocessing steps (`egocentric_alignment`, `csv_to_numpy`, `create_trainset`).
+3. Run cluster-count selection:
+   - `python pick_n_vame.py --project_dir /path/to/vame_project`
+   - Optionally write selected value back to config:
+     `python pick_n_vame.py --project_dir /path/to/vame_project --write_config`
+4. Train and evaluate model in `pipeline.py`.
+5. Run segmentation and any optional community/visualization steps.
+
+## `pick_n_vame.py` Notes
+
+- Default candidate cluster counts: `25,30,35,40,45,50,55`
+- Useful options:
+  - `--ks` to set custom cluster candidates
+  - `--window` and `--step` to control windowing
+  - `--search_roots` to change where pose `.npy` files are discovered
+  - `--number_only` for machine-readable output
+  - `--verbose` for diagnostic logging
+
+## Reproducibility and Path Standards
+
+- Do not commit machine-specific absolute paths.
+- Keep all paths configurable through script variables or CLI arguments.
+- Record dependency versions and model parameters with output artifacts.
+- Export derived outputs in structured formats (`.csv`, `.npy`) for downstream statistical analysis.
