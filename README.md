@@ -1,6 +1,6 @@
 # Vassar College Memory Neuroscience Lab
 
-<img src= https://pages.vassar.edu/bergstromlab/files/2022/02/Bergstrom-Lab-Logo-768x576.jpg<img width="768" height="576" alt="image" src="https://github.com/user-attachments/assets/c21f36e4-0fa5-4bcf-a3d6-cc3b7d306a71" />
+<img width="568" height="376" alt="image" src="https://github.com/user-attachments/assets/c21f36e4-0fa5-4bcf-a3d6-cc3b7d306a71" />
  />
 
 
