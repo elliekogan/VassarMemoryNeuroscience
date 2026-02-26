@@ -1,7 +1,7 @@
 # Vassar College Memory Neuroscience Lab
 
 <img width="568" height="376" alt="image" src="https://github.com/user-attachments/assets/c21f36e4-0fa5-4bcf-a3d6-cc3b7d306a71" />
- />
+ 
 
 
 Computational and behavioral analysis resources for memory neuroscience research at Vassar College.
