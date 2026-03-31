@@ -1,0 +1,4 @@
+ReadMe compare_dlc_results-2.py
+
+	The purpose of this script is to compare two sets of raw outputs (CSVs with coordinates and speeds) of DLC analyses. The script creates a summary sheet correlating frame-by-frame body part coordinates and speed columns with Pearson r, MAE and mean difference per animal per column. Make sure to edit the file paths in the CONFIG section so that they lead to wherever your CSVs are located. 
+
