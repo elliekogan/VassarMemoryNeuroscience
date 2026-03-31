@@ -1,20 +1,3 @@
-"""
-DLC Results Comparison Script
-==============================
-Compares DeepLabCut raw tracking outputs between two models (yours vs overseer's).
-Correlates frame-by-frame body part coordinates and speed columns.
-
-USAGE
------
-Set the two folder paths in the CONFIG section below, then run:
-    python compare_dlc_results.py
-
-OUTPUT
-------
-One Excel file: dlc_comparison_results.xlsx
-  - One sheet per matched animal (frame-by-frame data: mine | hers | diff)
-  - A Summary sheet at the front with Pearson r, MAE, and mean diff per animal per column
-"""
 
 import os
 import re
